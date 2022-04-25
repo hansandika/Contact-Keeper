@@ -29,7 +29,10 @@ const AuthState = (props) => {
 	// Load User
 	const loadUser = async () => {
 		// @todo - load token into global headers
-		setAuthToken(state.token || localStorage.token);
+		if (localStorage.getItem("token")) {
+			setAuthToken(localStorage.token);
+		}
+		// setAuthToken(state.token || localStorage.token);
 
 		try {
 			const res = await axios.get("/api/auth");
