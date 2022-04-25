@@ -3,16 +3,19 @@ import { CSSTransition, TransitionGroup } from "react-transition-group";
 import ContactContext from "../../context/contact/contactContext";
 import ContactItem from "./ContactItem";
 import Spinner from "../layout/Spinner";
+import AuthContext from "../../context/auth/AuthContext";
 
 const Contacts = () => {
 	const contactContext = useContext(ContactContext);
+	const authContext = useContext(AuthContext);
 
 	const { contacts, filtered, getContacts, loading } = contactContext;
+	const { user } = authContext;
 
 	useEffect(() => {
 		getContacts();
 		// eslint-disable-next-line
-	}, []);
+	}, [user]);
 
 	if (contacts?.length === 0) {
 		return <h4>Please add a contact</h4>;
