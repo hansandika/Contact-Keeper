@@ -7,7 +7,7 @@
   <h3 align="center">Contact Keeper</h3>
 
   <p align="center">
-    A simple web
+    A simple web application that manages person contact
     <br />
     <a href="https://hans-contact-keeper.herokuapp.com/">View Demo</a>
   </p>
@@ -19,7 +19,7 @@
 
 [![Product Name Screen Shot][product-screenshot]](https://hans-contact-keeper.herokuapp.com/)
 
-There are many great README templates available on GitHub; however, I didn't find one that really suited my needs so I created this enhanced one. I want to create a README template so amazing that it'll be the last one you ever need -- I think this is it.
+This application was created using the MERN stack. React serves as the front end, Express serves as the backend, Node serves as the environment, MongoDB serves as the database, and mongoose serves as the ORM. I'm using the context API for the State manager.
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
